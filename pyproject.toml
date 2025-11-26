@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rplife"
+dynamic = ["version"]
+description = "Conway's Game of Life in your terminal"
+readme = "README.md"
+authors = [{ name = "Mehfooj", email = "info@mehfooj.com" }]
+dependencies = [
+    'tomli; python_version < "3.11"',
+]
+
