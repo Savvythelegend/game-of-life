@@ -110,11 +110,3 @@ Names in this file correspond to valid `--pattern` values.
 ```
 python -m rplife
 ```
-
----
-
-## Development Notes
-
-* Package follows the `src/` layout.
-* Version is defined in `rplife/__init__.py`.
-* CLI entry point is configured in `pyproject.toml` under `[project.scripts]`.
