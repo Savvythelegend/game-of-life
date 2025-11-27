@@ -12,3 +12,18 @@ dependencies = [
     'tomli; python_version < "3.11"',
 ]
 
+# This installs a real CLI command: `rplife`
+[project.scripts]
+rplife = "rplife.__main__:main"
+
+# Tell setuptools that packages live inside src/
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+# Automatically find rplife package inside src/
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Pull version from src/rplife/__init__.py
+[tool.setuptools.dynamic]
+version = {attr = "rplife.__version__"}
